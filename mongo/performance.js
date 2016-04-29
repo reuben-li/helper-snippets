@@ -14,3 +14,6 @@ db.col.createIndex({field.property:1})
 // use before tuning to identify variables for indexing
 // use after to confirm indexes are used in the winning plan
 db.col.find(query).explain()
+
+// removing documents without dropping collection or indexes
+db.col.remove({})
