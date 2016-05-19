@@ -1,0 +1,4 @@
+// the following setting allows ctrl+direction keys to skip words in stdin 
+set-window-option -g xterm-keys on
+// to source configs without restarting tmux: C-b :source-file ~/.tmux.conf
+
