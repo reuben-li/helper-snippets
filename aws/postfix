@@ -20,3 +20,8 @@ smtp_sasl_security_options = noanonymous
 smtp_tls_CAfile = /etc/postfix/cacert.pem
 #smtp_tls_CApath = /etc/ssl/certs
 smtp_use_tls = yes
+
+
+
+sudo /etc/init.d/postfix reload
+echo "Test mail from postfix" | mail -s "Test Postfix" you@example.com
