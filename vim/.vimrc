@@ -1,6 +1,6 @@
-// set what tabs equate to in spaces
+# set what tabs equate to in spaces
 set tabstop=2
-// make tabs fill in with spaces:w
+# make tabs fill in with spaces:w
 set expandtab
-// set column limiter
+# set column limiter
 set colorcolumn=90
