@@ -7,6 +7,9 @@ set expandtab
 " set column limiter
 set colorcolumn=90
 
+" highlight trailing whitespaces
+match ErrorMsg '\s\+$'
+
 " for MacOS
 syntax on
 set backspace=indent,eol,start
