@@ -6,3 +6,6 @@ git rebase -i HEAD~2
 
 # one time commit
 git -c "user.name=Your Name" -c "user.email=Your email" commit ...
+
+# set editor to vim
+git config --global core.editor "vim"
