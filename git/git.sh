@@ -12,4 +12,5 @@ git config --global core.editor "vim"
 
 # set upstream and merge changes from upstream
 git remote add upstream <upstream .git path>
+git fetch upstream
 git merge upstream/<branch>
