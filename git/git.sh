@@ -9,3 +9,7 @@ git -c "user.name=Your Name" -c "user.email=Your email" commit ...
 
 # set editor to vim
 git config --global core.editor "vim"
+
+# set upstream and merge changes from upstream
+git remote add upstream <upstream .git path>
+git merge upstream/<branch>
