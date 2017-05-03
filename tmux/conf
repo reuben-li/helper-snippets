@@ -18,16 +18,21 @@ bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
 
 # Plugin settings
 set -g status-right "CPU: #{cpu_icon} #{cpu_percentage} | %a %h-%d %H:%M "
-set -g status-right '#{prefix_highlight} | %a %Y-%m-%d %H:%M'
+set -g status-left '#{prefix_highlight} | %a %Y-%m-%d %H:%M'
+set -g @continuum-restore 'on'
 
 # Bind ']' to use pbpaste
 bind ] run "reattach-to-user-namespace pbpaste | tmux load-buffer - && tmux paste-buffer"
 
-# List of plugins
+# List of plugins - don't forget to prefix + I
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'tmux-plugins/tmux-cpu'
 set -g @plugin 'tmux-plugins/tmux-prefix-highlight'
+set -g @plugin 'tmux-plugins/tmux-sidebar'
+set -g @plugin 'tmux-plugins/tmux-yank'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
